@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DecodeLabs | Professional Frontend Engineering</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Component -->
+    <header class="header">
+        <div class="header__inner">
+            <div class="logo">
+                <span class="logo__text">DECODELABS</span>
+            </div>
+            <div class="header__actions-mobile">
+                <!-- Theme Toggle Button (Mobile) -->
+                <button id="theme-toggle-mobile" class="theme-toggle" aria-label="Toggle theme">🌙</button>
+                <button class="nav__toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <span class="hamburger__line"></span>
+                    <span class="hamburger__line"></span>
+                    <span class="hamburger__line"></span>
+                </button>
+            </div>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li><a href="#about" class="nav__link">About</a></li>
+                    <li><a href="#services" class="nav__link">Services</a></li>
+                    <li><a href="#interactive" class="nav__link">Playground</a></li>
+                    <li><a href="#faq" class="nav__link">FAQ</a></li>
+                </ul>
+                <div class="nav__action-group">
+                    <a href="#services" class="button button--primary">Get Started</a>
+                    <!-- Theme Toggle Button (Desktop) -->
+                    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">🌙</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero__inner">
+                <div class="hero__content">
+                    <span class="badge">Industrial Training 2026</span>
+                    <h1 class="hero__title">Engineer High-Performance Web Architecture.</h1>
+                    <p class="hero__text">Master modern frontend development through rigorous project-based training, strict semantic standards, and interactive DOM manipulation.</p>
+                    <div class="hero__buttons">
+                        <a href="#services" class="button button--primary">Explore Tracks</a>
+                        <a href="#interactive" class="button button--outline">Test Interactivity</a>
+                    </div>
+                </div>
+                <div class="hero__image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=800&q=80" alt="Developers collaborating on code architecture" width="800" height="600" class="hero__image">
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="stats">
+            <div class="stats__inner">
+                <div class="stat-item">
+                    <span class="stat__number">100%</span>
+                    <span class="stat__label">Semantic Integrity</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat__number">50+</span>
+                    <span class="stat__label">Engineering Modules</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat__number">24/7</span>
+                    <span class="stat__label">Code Audit Support</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dynamic Interaction Playground Section -->
+        <section id="interactive" class="interactive-playground">
+            <div class="playground__inner">
+                <div class="section-header">
+                    <h2 class="section-title">JavaScript DOM Playground</h2>
+                    <p class="section-subtitle">Test out basic user interactions and dynamic content updates.</p>
+                </div>
+                <div class="playground__card">
+                    <h3>Dynamic State Switcher</h3>
+                    <p id="dynamic-text" class="playground__text">Current State: Standard Architectural Mode</p>
+                    <div class="playground__buttons">
+                        <button id="change-text-btn" class="button button--primary">Update Content</button>
+                        <button id="toggle-style-btn" class="button button--outline">Toggle Highlight</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="about__inner">
+                <div class="about__content">
+                    <h2 class="section-title">Built for Future Engineering Leaders</h2>
+                    <p class="about__text">DecodeLabs bridges the gap between foundational computer science theory and production-grade frontend execution. We emphasize strict adherence to W3C standards, accessibility, and architectural robustness.</p>
+                    <ul class="about__list">
+                        <li>✓ Real-world project simulations</li>
+                        <li>✓ Component-driven development workflows</li>
+                        <li>✓ Dynamic user interactions via JavaScript</li>
+                    </ul>
+                </div>
+                <div class="about__image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" alt="Team reviewing technical documentation" width="800" height="600" class="about__image">
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services">
+            <div class="services__inner">
+                <div class="section-header">
+                    <h2 class="section-title">Engineering Tracks</h2>
+                    <p class="section-subtitle">Comprehensive training phases designed to scale your expertise.</p>
+                </div>
+                <div class="services__grid">
+                    <article class="service-card">
+                        <div class="service__icon">📐</div>
+                        <h3 class="service-card__title">Static Architecture</h3>
+                        <p class="service-card__text">Master layout foundations, semantic DOM structures, and the CSS Box Model with absolute precision.</p>
+                    </article>
+                    <article class="service-card">
+                        <div class="service__icon">🌊</div>
+                        <h3 class="service-card__title">Fluid & Responsive</h3>
+                        <p class="service-card__text">Build layouts that adapt seamlessly across devices using modern CSS Grid, Flexbox, and Media Queries.</p>
+                    </article>
+                    <article class="service-card">
+                        <div class="service__icon">⚡</div>
+                        <h3 class="service-card__title">JavaScript Interactivity</h3>
+                        <p class="service-card__text">Bring static interfaces to life using event listeners, state toggles, and dynamic DOM updates.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="faq">
+            <div class="faq__inner">
+                <div class="section-header">
+                    <h2 class="section-title">Frequently Asked Questions</h2>
+                    <p class="section-subtitle">Everything you need to know about the engineering program.</p>
+                </div>
+                <div class="faq__accordion">
+                    <details class="faq__item">
+                        <summary class="faq__question">What are the prerequisites for joining DecodeLabs?</summary>
+                        <p class="faq__answer">An understanding of basic computer science concepts and commitment to rigorous engineering standards are required.</p>
+                    </details>
+                    <details class="faq__item">
+                        <summary class="faq__question">How are projects evaluated and graded?</summary>
+                        <p class="faq__answer">Projects undergo strict quality gates including W3C validation, semantic audits, and visual regression checks.</p>
+                    </details>
+                    <details class="faq__item">
+                        <summary class="faq__question">Can I use this work for my professional portfolio?</summary>
+                        <p class="faq__answer">Yes! All completed milestones form a production-ready real-world portfolio for future employers.</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Component -->
+    <footer class="footer">
+        <div class="footer__inner">
+            <div class="footer__col">
+                <span class="logo__text">DECODELABS</span>
+                <p class="footer__desc">Industrial Training Foundations 2026.</p>
+            </div>
+            <div class="footer__col">
+                <h4 class="footer__heading">Navigation</h4>
+                <ul class="footer__links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#interactive">Playground</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h4 class="footer__heading">Contact</h4>
+                <p class="footer__text-muted">decodelabs.tech@gmail.com</p>
+                <p class="footer__text-muted">Greater Lucknow, India</p>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p>&copy; 2026 DecodeLabs. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript Interactivity Script -->
+    <script src="script.js"></script>
+</body>
+</html>
